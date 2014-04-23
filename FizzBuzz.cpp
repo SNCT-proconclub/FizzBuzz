@@ -18,6 +18,11 @@ int main()
         else {
             printf("%d", i);
         }
+
+	if((i - 3) % 10 == 0){
+		printf("?");
+	}
+
 	printf("\n");
     }
     return 0;
