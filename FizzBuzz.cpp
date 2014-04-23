@@ -1,9 +1,11 @@
 #include <stdio.h>
+#include <math.h>
 
 
 int main()
 {
-    int i;
+    int i,j;
+    double t;
 
     for (i = 1; i < 100; i++) {
         if (i % 15 == 0) {
@@ -18,7 +20,18 @@ int main()
         else {
             printf("%d", i);
         }
+
+        t = sqrt(i); //平方根の値を算出。
+        j = (int)t; //整数値のみを引き出す。
+
+        if((j*100) % (int)(t*100) == 0){
+            printf("!");
+        }
+
+        //printf("  %lf",t);テスト用
+
 	printf("\n");
+
     }
     return 0;
 }
