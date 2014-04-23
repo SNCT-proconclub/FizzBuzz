@@ -9,16 +9,25 @@ int main()
         if (i % 15 == 0) {
             printf("FizzBuzz");
         }
+        else if (i % 21 == 0){
+            printf("FizzBouze");
+        }
+        else if (i % 35 == 0){
+            printf("BuzzBouze");
+        }
         else if (i % 3 == 0) {
             printf("Fizz");
         }
         else if (i % 5 == 0) {
             printf("Buzz");
         }
+        else if (i % 7 == 0) {
+            printf("Bouze");
+        }
         else {
             printf("%d", i);
         }
-	printf("\n");
+	    printf("\n");
     }
     return 0;
 }
